@@ -1,36 +1,5 @@
-* {
-  box-sizing: border-box;
-  font-family: "Roboto", sans-serif;
-  font-weight: 400;
-  background: #FFF;
-  color: #1C252B;
-}
-
-li {
-  list-style: none;
-}
-
-ul {
-  padding: 0;
-  margin: 0;
-}
-
-* {
-  box-sizing: border-box;
-  font-family: "Roboto", sans-serif;
-  font-weight: 400;
-  background: #FFF;
-  color: #1C252B;
-}
-
-li {
-  list-style: none;
-}
-
-ul {
-  padding: 0;
-  margin: 0;
-}
+@import "../settings";
+@import "../variables";
 
 .promo-container {
   display: flex;
@@ -55,8 +24,9 @@ ul {
   gap: 0.2vw;
   padding: 6px;
   border-radius: 6px;
-  background: #FFF;
+  background: $background;
   box-shadow: 0 0 7px rgba(8, 76, 148, 0.28);
+
 }
 
 .svg-flag {
@@ -69,8 +39,9 @@ ul {
 .svg-arrow {
   width: 8px;
   height: 8px;
-  background: #FFF;
+  background: $background;
   transition: 1s;
+
 }
 
 .svg-arrow:hover {
@@ -81,22 +52,3 @@ ul {
 .use-arrow {
   fill: #3A4D57;
 }
-
-* {
-  box-sizing: border-box;
-  font-family: "Roboto", sans-serif;
-  font-weight: 400;
-  background: #FFF;
-  color: #1C252B;
-}
-
-li {
-  list-style: none;
-}
-
-ul {
-  padding: 0;
-  margin: 0;
-}
-
-/*# sourceMappingURL=style.css.map */
