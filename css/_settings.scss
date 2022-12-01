@@ -1,0 +1,21 @@
+@import "variables";
+
+
+
+*{
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  background:  $background;
+  color: $main-color;
+}
+
+
+li{
+  list-style: none;
+}
+
+ul{
+  padding: 0;
+  margin: 0;
+}
