@@ -10,16 +10,39 @@
     flex-basis: 80vw;
   }
 
+  .svg-phone {
+    width: 40vw;
+    height: 45vw;
+  }
+
+
+  .background-phone{
+    top: 14vh;
+    right: 5vw;
+    width: 43vw;
+  }
+
+
+
 }
 
 @media (max-width: 767px) {
   .promo-section {
     margin-top: 45px;
+    grid-template-columns: 1fr 0.6fr;
   }
   .promo-section__title {
     font-size: calc(32px + (32 + 32 * 0.7) * ((100vw - 320px) / 1992));
     line-height: calc(32px + (32 + 32 * 0.7) * ((100vw - 320px) / 1992));
   }
+
+  .background-phone{
+    top: 10vh;
+    right: 0;
+    width: 49vw;
+    z-index: -1;
+  }
+
 }
 
 @media (max-width: 576px) {
@@ -31,4 +54,30 @@
     font-size: calc(14px + (4 + 4 * 0.7) * ((100vw - 320px) / 1992));
     line-height: 130%;
   }
+
+  .btn-telegram, .btn-whatsapp {
+    width: 120px;
+    height: 30px;
+  }
+
+  .svg-whatsapp, .svg-telegram {
+    width: 40px;
+    height: 50px;
+  }
+
+}
+
+@media (max-width: 435px) {
+  .promo-section {
+    grid-template-columns: 1fr;
+  }
+
+  .block-buttons{
+    flex-direction: column;
+  }
+
+  .background-phone {
+    top: 260px;
+  }
+
 }
