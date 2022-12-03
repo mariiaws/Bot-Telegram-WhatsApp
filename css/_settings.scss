@@ -1,21 +1,68 @@
 @import "variables";
 
 
-
-*{
+* {
   box-sizing: border-box;
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
-  background:  $background;
-  color: $main-color;
+  font-style: normal;
 }
 
+body{
+  background: $white;
+  color: $black;
 
-li{
+}
+
+li {
   list-style: none;
 }
 
-ul{
+ul, h1 {
   padding: 0;
   margin: 0;
 }
+
+.button {
+  width: 160px;
+  height: 40px;
+  border-radius: 6px;
+  border: none;
+  font-size: 18px;
+  line-height: 150%;
+  color: $white;
+}
+
+.svg-flag {
+  width: 21px;
+  height: 21px;
+  box-shadow: 0 0 7px rgba(8, 76, 148, 0.28);
+  border-radius: 50%;
+}
+
+.svg-arrow {
+  width: 8px;
+  height: 8px;
+  background: $white;
+  transition: 1s;
+
+}
+
+.svg-arrow:hover {
+  transition: 1s;
+  transform: translate3d(0, 2px, 0);
+}
+
+.use-arrow {
+  fill: #3A4D57;
+}
+
+.svg-cross {
+  width: 26px;
+  height: 22px;
+}
+
+.use-cross {
+  fill: #FBCFD8;
+}
+
