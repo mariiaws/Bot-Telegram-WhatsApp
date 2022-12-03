@@ -1,2 +1,34 @@
 @import "settings";
 
+@media (max-width: 992px) {
+  .promo-container__wrapper {
+    width: 90vw;
+  }
+
+  .nav__about {
+    display: flex;
+    flex-basis: 80vw;
+  }
+
+}
+
+@media (max-width: 767px) {
+  .promo-section {
+    margin-top: 45px;
+  }
+  .promo-section__title {
+    font-size: calc(32px + (32 + 32 * 0.7) * ((100vw - 320px) / 1992));
+    line-height: calc(32px + (32 + 32 * 0.7) * ((100vw - 320px) / 1992));
+  }
+}
+
+@media (max-width: 576px) {
+  .nav-wrapper {
+    gap: 10vw;
+  }
+
+  .promo-section__subtitle {
+    font-size: calc(14px + (4 + 4 * 0.7) * ((100vw - 320px) / 1992));
+    line-height: 130%;
+  }
+}
