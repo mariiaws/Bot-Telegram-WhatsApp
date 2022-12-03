@@ -1,0 +1,75 @@
+@import "../settings";
+@import "../variables";
+
+
+.promo-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 4.52vw;
+}
+
+.promo-section__title {
+  font-size: calc(32px + 28 * (100vw / 1992));
+  line-height: calc(24px + 46 * (100vw / 1992));
+}
+
+.promo-section__subtitle {
+  display: inline-block;
+  margin-top: 1.15vh;
+  font-size: $font-size-18;
+  line-height: calc(24px + 3.2 * (100vw / 1992));
+  color: $dark-blue;
+}
+
+.block-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2.51vw;
+  margin-top: 5vh;
+
+}
+
+.block-buttons__telegram, .block-buttons__whatsapp {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding-left: 30px;
+}
+
+.btn-whatsapp {
+  background: $background-whatsapp;
+}
+
+.btn-telegram {
+  background: $background-telegram;
+}
+
+.svg-whatsapp, .svg-telegram {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+
+}
+
+.svg-whatsapp {
+  left: 0;
+}
+
+.svg-telegram {
+  left: 0;
+}
+
+.promo-section__right {
+  //position: relative;
+}
+
+.background-phone{
+  position: absolute;
+  top: 40px;
+  right: 8vw;
+  width: 42vw;
+
+  //height: 100%;
+}
+
+

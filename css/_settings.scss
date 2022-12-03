@@ -28,12 +28,12 @@ ul, h1 {
   height: 40px;
   border-radius: 6px;
   border: none;
-  font-size: 18px;
+  font-size: $font-size-18;
   line-height: 150%;
   color: $white;
 }
 
-.svg-flag {
+.svg-flag-uk {
   width: 21px;
   height: 21px;
   box-shadow: 0 0 7px rgba(8, 76, 148, 0.28);
@@ -45,7 +45,6 @@ ul, h1 {
   height: 8px;
   background: $white;
   transition: 1s;
-
 }
 
 .svg-arrow:hover {

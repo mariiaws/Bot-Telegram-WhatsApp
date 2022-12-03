@@ -24,12 +24,12 @@ ul, h1 {
   height: 40px;
   border-radius: 6px;
   border: none;
-  font-size: 18px;
+  font-size: calc(14px + 4 * (100vw / 1992));
   line-height: 150%;
   color: #FFF;
 }
 
-.svg-flag {
+.svg-flag-uk {
   width: 21px;
   height: 21px;
   box-shadow: 0 0 7px rgba(8, 76, 148, 0.28);
@@ -87,12 +87,12 @@ ul, h1 {
   height: 40px;
   border-radius: 6px;
   border: none;
-  font-size: 18px;
+  font-size: calc(14px + 4 * (100vw / 1992));
   line-height: 150%;
   color: #FFF;
 }
 
-.svg-flag {
+.svg-flag-uk {
   width: 21px;
   height: 21px;
   box-shadow: 0 0 7px rgba(8, 76, 148, 0.28);
@@ -151,6 +151,11 @@ ul, h1 {
   box-shadow: 0 0 7px rgba(8, 76, 148, 0.28);
 }
 
+.svg-russia {
+  width: 70px;
+  height: 70px;
+}
+
 * {
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
@@ -177,12 +182,12 @@ ul, h1 {
   height: 40px;
   border-radius: 6px;
   border: none;
-  font-size: 18px;
+  font-size: calc(14px + 4 * (100vw / 1992));
   line-height: 150%;
   color: #FFF;
 }
 
-.svg-flag {
+.svg-flag-uk {
   width: 21px;
   height: 21px;
   box-shadow: 0 0 7px rgba(8, 76, 148, 0.28);
@@ -216,7 +221,7 @@ ul, h1 {
 
 .promo-section {
   display: grid;
-  grid-template-columns: 2fr 1fr;
+  grid-template-columns: 1fr 1fr;
   margin-top: 4.52vw;
 }
 
@@ -237,7 +242,7 @@ ul, h1 {
   display: flex;
   flex-wrap: wrap;
   gap: 2.51vw;
-  margin-top: 1.51vh;
+  margin-top: 5vh;
 }
 
 .block-buttons__telegram, .block-buttons__whatsapp {
@@ -269,23 +274,11 @@ ul, h1 {
   left: 0;
 }
 
-.svg-phone {
-  width: 200px;
-  height: 520px;
-}
-
-.svg-russia {
-  width: 70px;
-  height: 70px;
-}
-
-.svg-tags {
-  width: 180px;
-  height: 140px;
-}
-
-.use-tags {
-  fill: #FFF;
+.background-phone {
+  position: absolute;
+  top: 40px;
+  right: 8vw;
+  width: 42vw;
 }
 
 * {
@@ -314,12 +307,12 @@ ul, h1 {
   height: 40px;
   border-radius: 6px;
   border: none;
-  font-size: 18px;
+  font-size: calc(14px + 4 * (100vw / 1992));
   line-height: 150%;
   color: #FFF;
 }
 
-.svg-flag {
+.svg-flag-uk {
   width: 21px;
   height: 21px;
   box-shadow: 0 0 7px rgba(8, 76, 148, 0.28);
@@ -360,15 +353,34 @@ ul, h1 {
     display: flex;
     flex-basis: 80vw;
   }
+
+  .svg-phone {
+    width: 40vw;
+    height: 45vw;
+  }
+
+  .background-phone {
+    top: 14vh;
+    right: 5vw;
+    width: 43vw;
+  }
 }
 @media (max-width: 767px) {
   .promo-section {
     margin-top: 45px;
+    grid-template-columns: 1fr 0.6fr;
   }
 
   .promo-section__title {
     font-size: calc(32px + (32 + 32 * 0.7) * ((100vw - 320px) / 1992));
     line-height: calc(32px + (32 + 32 * 0.7) * ((100vw - 320px) / 1992));
+  }
+
+  .background-phone {
+    top: 10vh;
+    right: 0;
+    width: 49vw;
+    z-index: -1;
   }
 }
 @media (max-width: 576px) {
@@ -379,6 +391,29 @@ ul, h1 {
   .promo-section__subtitle {
     font-size: calc(14px + (4 + 4 * 0.7) * ((100vw - 320px) / 1992));
     line-height: 130%;
+  }
+
+  .btn-telegram, .btn-whatsapp {
+    width: 120px;
+    height: 30px;
+  }
+
+  .svg-whatsapp, .svg-telegram {
+    width: 40px;
+    height: 50px;
+  }
+}
+@media (max-width: 435px) {
+  .promo-section {
+    grid-template-columns: 1fr;
+  }
+
+  .block-buttons {
+    flex-direction: column;
+  }
+
+  .background-phone {
+    top: 260px;
   }
 }
 

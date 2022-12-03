@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="ru" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -13,22 +13,54 @@
 <body>
 
 <div class="promo-container">
-    <header class="header">
-        <nav class="nav">
-            <ul class="nav-wrapper">
-                <li class="nav__q-a">Q&A</li>
-                <li class="nav__about">About</li>
-                <li class="nav__language">
-                    <svg class="svg-flag">
-                        <use class="use-flag" xlink:href="img/sprite.svg#united-kingdom"></use>
-                    </svg>
-                <svg class="svg-arrow">
-                    <use class="use-arrow" xlink:href="img/sprite.svg#arrow-down"></use>
+    <div class="promo-container__wrapper">
+
+        <header class="header">
+            <nav class="nav">
+                <ul class="nav-wrapper">
+                    <li class="nav__q-a">Q&A</li>
+                    <li class="nav__about">About</li>
+                    <li class="nav__language">
+                        <svg class="svg-flag-uk">
+                            <use class="use-flag-uk" xlink:href="img/sprite.svg#united-kingdom"></use>
+                        </svg>
+                        <svg class="svg-arrow">
+                            <use class="use-arrow" xlink:href="img/sprite.svg#arrow-down"></use>
+                        </svg>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <section class="promo-section">
+            <div class="promo-section__left">
+                <h1 class="promo-section__title">Бот в Telegram <br> & WhatsApp</h1>
+                <span class="promo-section__subtitle">которому можно прислать голосовое аудиосообщение и он переведет его в текст.
+            А профессиональный редактор оформит и подготовит его для публикации.</span>
+                <div class="block-buttons">
+                    <div class="block-buttons__whatsapp">
+                        <svg class="svg-whatsapp">
+                            <use class="use-whatsapp" xlink:href="img/sprite.svg#whatsapp"></use>
+                        </svg>
+                        <button class="button btn-whatsapp">Попробовать</button>
+                    </div>
+                    <div class="block-buttons__telegram">
+                        <svg class="svg-telegram">
+                            <use class="use-telegram" xlink:href="img/sprite.svg#telegram"></use>
+                        </svg>
+
+                        <button class="button btn-telegram">Попробовать</button>
+                    </div>
+                </div>
+            </div>
+         <div class="promo-section__right">
+             <img src="img/background-phone.jpg" class="background-phone" alt="">
+                <svg class="svg-cross">
+                    <use class="use-cross" xlink:href="img/sprite.svg#cross"></use>
                 </svg>
-                </li>
-            </ul>
-        </nav>
-    </header>
+            </div>
+        </section>
+    </div>
 </div>
 
 
