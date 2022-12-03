@@ -7,9 +7,10 @@
   padding-top: 30px;
 }
 
-.header {
+.promo-container__wrapper{
   width: 60%;
 }
+
 
 .nav-wrapper {
   display: flex;
@@ -21,34 +22,11 @@
 .nav__language {
   display: flex;
   align-items: center;
-  gap: 0.2vw;
+  gap: 5px;
   padding: 6px;
   border-radius: 6px;
-  background: $background;
+  background: $white;
   box-shadow: 0 0 7px rgba(8, 76, 148, 0.28);
 
 }
 
-.svg-flag {
-  width: 21px;
-  height: 21px;
-  box-shadow: 0 0 7px rgba(8, 76, 148, 0.28);
-  border-radius: 50%;
-}
-
-.svg-arrow {
-  width: 8px;
-  height: 8px;
-  background: $background;
-  transition: 1s;
-
-}
-
-.svg-arrow:hover {
-  transition: 1s;
-  transform: translate3d(0, 2px, 0);
-}
-
-.use-arrow {
-  fill: #3A4D57;
-}
