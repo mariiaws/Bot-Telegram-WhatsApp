@@ -1,0 +1,69 @@
+@import "../variables";
+@import "../settings";
+
+.info-container {
+  margin-top: 20vw;
+  background: url("../img/background-info.jpg") top/cover no-repeat;
+  width: 100%;
+  height: 890px;
+}
+
+.info-section {
+  position: relative;
+  height: 800px;
+}
+
+.block-question, .block-answer {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  width: 420px;
+  height: 155px;
+  padding: 35px;
+  background: #FFFFFF;
+  box-shadow: 0 4px 16px rgba(63, 146, 209, 0.12);
+  border-radius: 47px;
+}
+
+.block-question {
+  top: 220px;
+  left: 40px;
+}
+
+.svg-question, .svg-answer {
+  position: absolute;
+  top: -30px;
+  left: -30px;
+  width: 65px;
+  height: 90px;
+}
+
+.block-question__text, .block-answer__text {
+  font-size: $font-size-18;
+  line-height: 150%;
+}
+
+.block-answer {
+  top: 485px;
+  right: 7vw;
+
+}
+
+.svg-airplane, .svg-tags {
+  position: absolute;
+}
+
+.svg-airplane {
+  width: 270px;
+  height: 140px;
+  top: 357px;
+  left: 18vw;
+  transform: rotate(22deg);
+}
+
+.svg-tags {
+  width: 150px;
+  height: 94px;
+  top: 334px;
+  right: 19vw;
+}
