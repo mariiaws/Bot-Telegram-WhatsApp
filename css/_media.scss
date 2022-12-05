@@ -15,7 +15,7 @@
     height: 45vw;
   }
 
-  .background-phone{
+  .background-phone {
     top: 14vh;
     right: 5vw;
     width: 43vw;
@@ -33,10 +33,11 @@
     line-height: calc(32px + (32 + 32 * 0.7) * ((100vw - 320px) / 1992));
   }
 
-  .background-phone{
+  .background-phone {
     top: 10vh;
     right: 0;
     width: 49vw;
+    z-index: -2;
   }
 
 }
@@ -65,6 +66,50 @@
     top: 113px;
   }
 
+  .block-question, .block-answer {
+    right: 0;
+    align-items: flex-end;
+    width: 67vw;
+    height: 31vw;
+    padding: 4vw;
+  }
+
+  .block-question {
+    width: fit-content;
+    height: fit-content;
+    padding: 6vw;
+  }
+
+  .svg-question, .svg-answer {
+    top: -9vw;
+    left: 0;
+    width: 13vw;
+    height: 17vw;
+  }
+
+  .block-answer {
+    top: 425px;
+    width: fit-content;
+    height: fit-content;
+    padding: 6vw;
+  }
+
+
+  .svg-airplane {
+    top: 314px;
+    left: 0;
+    width: 215px;
+    height: 115px;
+    transform: rotate(0deg);
+  }
+
+  .svg-tags {
+    top: 360px;
+    right: 0;
+    width: 120px;
+    height: 65px;
+  }
+
 }
 
 @media (max-width: 435px) {
@@ -72,7 +117,7 @@
     grid-template-columns: 1fr;
   }
 
-  .block-buttons{
+  .block-buttons {
     flex-direction: column;
   }
 
