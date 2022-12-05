@@ -8,7 +8,7 @@
   font-style: normal;
 }
 
-body{
+body {
   background: $white;
   color: $black;
 
@@ -23,6 +23,30 @@ ul, h1 {
   margin: 0;
 }
 
+
+a {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.background-blotch {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 17vw;
+  height: 17vw;
+  z-index: -1;
+}
+
+.background-blotch-two {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 14vw;
+  height: 8vw;
+  z-index: -1;
+}
+
 .button {
   width: 160px;
   height: 40px;
@@ -31,20 +55,16 @@ ul, h1 {
   font-size: $font-size-18;
   line-height: 150%;
   color: $white;
+  cursor: pointer;
 }
 
-.svg-flag-uk {
-  width: 21px;
-  height: 21px;
-  box-shadow: 0 0 7px rgba(8, 76, 148, 0.28);
-  border-radius: 50%;
-}
 
 .svg-arrow {
   width: 8px;
   height: 8px;
   background: $white;
   transition: 1s;
+  cursor: pointer;
 }
 
 .svg-arrow:hover {

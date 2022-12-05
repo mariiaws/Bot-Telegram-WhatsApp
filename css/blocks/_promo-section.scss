@@ -34,14 +34,29 @@
   display: flex;
   align-items: center;
   padding-left: 30px;
+  transition: 1s;
+  cursor: pointer;
+}
+
+.block-buttons__telegram:hover, .block-buttons__whatsapp:hover{
+  transition: 1s;
+  opacity: 0.5;
 }
 
 .btn-whatsapp {
   background: $background-whatsapp;
+
+  a {
+    color: $white;
+  }
 }
 
 .btn-telegram {
   background: $background-telegram;
+
+  a {
+    color: $white;
+  }
 }
 
 .svg-whatsapp, .svg-telegram {
@@ -59,17 +74,12 @@
   left: 0;
 }
 
-.promo-section__right {
-  //position: relative;
-}
-
-.background-phone{
+.background-phone {
   position: absolute;
   top: 40px;
   right: 8vw;
   width: 42vw;
-
-  //height: 100%;
+  z-index: -2;
 }
 
 

@@ -15,21 +15,18 @@
     height: 45vw;
   }
 
-
   .background-phone{
     top: 14vh;
     right: 5vw;
     width: 43vw;
   }
 
-
-
 }
 
 @media (max-width: 767px) {
   .promo-section {
     margin-top: 45px;
-    grid-template-columns: 1fr 0.6fr;
+    grid-template-columns: 1fr 1fr;
   }
   .promo-section__title {
     font-size: calc(32px + (32 + 32 * 0.7) * ((100vw - 320px) / 1992));
@@ -40,7 +37,6 @@
     top: 10vh;
     right: 0;
     width: 49vw;
-    z-index: -1;
   }
 
 }
@@ -65,6 +61,10 @@
     height: 50px;
   }
 
+  .background-phone {
+    top: 113px;
+  }
+
 }
 
 @media (max-width: 435px) {
@@ -77,7 +77,7 @@
   }
 
   .background-phone {
-    top: 260px;
+    top: 240px;
   }
 
 }
