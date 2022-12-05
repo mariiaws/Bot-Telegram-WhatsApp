@@ -7,7 +7,7 @@
   padding-top: 30px;
 }
 
-.promo-container__wrapper{
+.promo-container__wrapper {
   width: 60%;
 }
 
@@ -18,7 +18,16 @@
   gap: 2vw;
 }
 
+.link-about, .link-q-a {
+  color: $black;
+}
+
+.link-about:hover, .link-q-a:hover {
+  text-decoration: underline;
+}
+
 .nav__language {
+  position: relative;
   display: flex;
   align-items: center;
   gap: 5px;
@@ -26,10 +35,36 @@
   border-radius: 6px;
   background: $white;
   box-shadow: 0 0 7px rgba(8, 76, 148, 0.28);
+  cursor: pointer;
 
 }
 
-.svg-russia {
-  width: 70px;
-  height: 70px;
+.svg-flag-uk {
+  width: 21px;
+  height: 21px;
+  box-shadow: 0 0 7px rgba(8, 76, 148, 0.28);
+  border-radius: 50%;
+}
+
+.svg-flag-russia {
+  width: 21px;
+  height: 21px;
+  box-shadow: 0 0 7px rgba(8, 76, 148, 0.28);
+  border-radius: 50%;
+}
+
+.drop-down-content {
+  display: none;
+  position: absolute;
+  top: 42px;
+  left: -13px;
+  padding: 6px;
+  border-radius: 6px;
+  background: #FFF;
+  box-shadow: 0 0 7px rgb(8 76 148 / 28%);
+}
+
+.language-russia:hover {
+  text-decoration: underline;
+  cursor: pointer;
 }

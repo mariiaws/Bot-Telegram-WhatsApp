@@ -15,18 +15,28 @@
 <div class="promo-container">
     <div class="promo-container__wrapper">
 
+        <img src="img/blotch.jpg" class="background-blotch" alt="blotch"/>
+        <img src="img/blotch-2.jpg" class="background-blotch-two" alt="blotch-2"/>
+
         <header class="header">
             <nav class="nav">
                 <ul class="nav-wrapper">
-                    <li class="nav__q-a">Q&A</li>
-                    <li class="nav__about">About</li>
+                    <li class="nav__q-a"><a href="#" class="link-q-a">Q&A</a></li>
+                    <li class="nav__about"><a href="#" class="link-about">About</a></li>
                     <li class="nav__language">
                         <svg class="svg-flag-uk">
                             <use class="use-flag-uk" xlink:href="img/sprite.svg#united-kingdom"></use>
                         </svg>
+                        <svg class="svg-flag-russia" style="display: none">
+                            <use class="use-flag-russia" xlink:href="img/sprite.svg#russia"></use>
+                        </svg>
                         <svg class="svg-arrow">
                             <use class="use-arrow" xlink:href="img/sprite.svg#arrow-down"></use>
                         </svg>
+                        <ul class="drop-down-content" style="display: none">
+                            <li class="language-russia">Русский</li>
+                        </ul>
+
                     </li>
                 </ul>
             </nav>
@@ -42,19 +52,18 @@
                         <svg class="svg-whatsapp">
                             <use class="use-whatsapp" xlink:href="img/sprite.svg#whatsapp"></use>
                         </svg>
-                        <button class="button btn-whatsapp">Попробовать</button>
+                        <button class="button btn-whatsapp"><a href="#">Попробовать</a></button>
                     </div>
                     <div class="block-buttons__telegram">
                         <svg class="svg-telegram">
                             <use class="use-telegram" xlink:href="img/sprite.svg#telegram"></use>
                         </svg>
-
-                        <button class="button btn-telegram">Попробовать</button>
+                        <button class="button btn-telegram"><a href="#">Попробовать</a></button>
                     </div>
                 </div>
             </div>
-         <div class="promo-section__right">
-             <img src="img/background-phone.jpg" class="background-phone" alt="">
+            <div class="promo-section__right">
+                <img src="img/background-phone.jpg" class="background-phone" alt="">
                 <svg class="svg-cross">
                     <use class="use-cross" xlink:href="img/sprite.svg#cross"></use>
                 </svg>

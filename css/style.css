@@ -19,6 +19,29 @@ ul, h1 {
   margin: 0;
 }
 
+a {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.background-blotch {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 17vw;
+  height: 17vw;
+  z-index: -1;
+}
+
+.background-blotch-two {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 14vw;
+  height: 8vw;
+  z-index: -1;
+}
+
 .button {
   width: 160px;
   height: 40px;
@@ -27,13 +50,7 @@ ul, h1 {
   font-size: calc(14px + 4 * (100vw / 1992));
   line-height: 150%;
   color: #FFF;
-}
-
-.svg-flag-uk {
-  width: 21px;
-  height: 21px;
-  box-shadow: 0 0 7px rgba(8, 76, 148, 0.28);
-  border-radius: 50%;
+  cursor: pointer;
 }
 
 .svg-arrow {
@@ -41,6 +58,7 @@ ul, h1 {
   height: 8px;
   background: #FFF;
   transition: 1s;
+  cursor: pointer;
 }
 
 .svg-arrow:hover {
@@ -82,6 +100,29 @@ ul, h1 {
   margin: 0;
 }
 
+a {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.background-blotch {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 17vw;
+  height: 17vw;
+  z-index: -1;
+}
+
+.background-blotch-two {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 14vw;
+  height: 8vw;
+  z-index: -1;
+}
+
 .button {
   width: 160px;
   height: 40px;
@@ -90,13 +131,7 @@ ul, h1 {
   font-size: calc(14px + 4 * (100vw / 1992));
   line-height: 150%;
   color: #FFF;
-}
-
-.svg-flag-uk {
-  width: 21px;
-  height: 21px;
-  box-shadow: 0 0 7px rgba(8, 76, 148, 0.28);
-  border-radius: 50%;
+  cursor: pointer;
 }
 
 .svg-arrow {
@@ -104,6 +139,7 @@ ul, h1 {
   height: 8px;
   background: #FFF;
   transition: 1s;
+  cursor: pointer;
 }
 
 .svg-arrow:hover {
@@ -141,7 +177,16 @@ ul, h1 {
   gap: 2vw;
 }
 
+.link-about, .link-q-a {
+  color: #1C252B;
+}
+
+.link-about:hover, .link-q-a:hover {
+  text-decoration: underline;
+}
+
 .nav__language {
+  position: relative;
   display: flex;
   align-items: center;
   gap: 5px;
@@ -149,11 +194,37 @@ ul, h1 {
   border-radius: 6px;
   background: #FFF;
   box-shadow: 0 0 7px rgba(8, 76, 148, 0.28);
+  cursor: pointer;
 }
 
-.svg-russia {
-  width: 70px;
-  height: 70px;
+.svg-flag-uk {
+  width: 21px;
+  height: 21px;
+  box-shadow: 0 0 7px rgba(8, 76, 148, 0.28);
+  border-radius: 50%;
+}
+
+.svg-flag-russia {
+  width: 21px;
+  height: 21px;
+  box-shadow: 0 0 7px rgba(8, 76, 148, 0.28);
+  border-radius: 50%;
+}
+
+.drop-down-content {
+  display: none;
+  position: absolute;
+  top: 42px;
+  left: -13px;
+  padding: 6px;
+  border-radius: 6px;
+  background: #FFF;
+  box-shadow: 0 0 7px rgba(8, 76, 148, 0.28);
+}
+
+.language-russia:hover {
+  text-decoration: underline;
+  cursor: pointer;
 }
 
 * {
@@ -177,6 +248,29 @@ ul, h1 {
   margin: 0;
 }
 
+a {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.background-blotch {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 17vw;
+  height: 17vw;
+  z-index: -1;
+}
+
+.background-blotch-two {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 14vw;
+  height: 8vw;
+  z-index: -1;
+}
+
 .button {
   width: 160px;
   height: 40px;
@@ -185,13 +279,7 @@ ul, h1 {
   font-size: calc(14px + 4 * (100vw / 1992));
   line-height: 150%;
   color: #FFF;
-}
-
-.svg-flag-uk {
-  width: 21px;
-  height: 21px;
-  box-shadow: 0 0 7px rgba(8, 76, 148, 0.28);
-  border-radius: 50%;
+  cursor: pointer;
 }
 
 .svg-arrow {
@@ -199,6 +287,7 @@ ul, h1 {
   height: 8px;
   background: #FFF;
   transition: 1s;
+  cursor: pointer;
 }
 
 .svg-arrow:hover {
@@ -250,14 +339,27 @@ ul, h1 {
   display: flex;
   align-items: center;
   padding-left: 30px;
+  transition: 1s;
+  cursor: pointer;
+}
+
+.block-buttons__telegram:hover, .block-buttons__whatsapp:hover {
+  transition: 1s;
+  opacity: 0.5;
 }
 
 .btn-whatsapp {
   background: #4CAF50;
 }
+.btn-whatsapp a {
+  color: #FFF;
+}
 
 .btn-telegram {
   background: #41B4E6;
+}
+.btn-telegram a {
+  color: #FFF;
 }
 
 .svg-whatsapp, .svg-telegram {
@@ -279,6 +381,7 @@ ul, h1 {
   top: 40px;
   right: 8vw;
   width: 42vw;
+  z-index: -2;
 }
 
 * {
@@ -302,6 +405,29 @@ ul, h1 {
   margin: 0;
 }
 
+a {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.background-blotch {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 17vw;
+  height: 17vw;
+  z-index: -1;
+}
+
+.background-blotch-two {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 14vw;
+  height: 8vw;
+  z-index: -1;
+}
+
 .button {
   width: 160px;
   height: 40px;
@@ -310,13 +436,7 @@ ul, h1 {
   font-size: calc(14px + 4 * (100vw / 1992));
   line-height: 150%;
   color: #FFF;
-}
-
-.svg-flag-uk {
-  width: 21px;
-  height: 21px;
-  box-shadow: 0 0 7px rgba(8, 76, 148, 0.28);
-  border-radius: 50%;
+  cursor: pointer;
 }
 
 .svg-arrow {
@@ -324,6 +444,7 @@ ul, h1 {
   height: 8px;
   background: #FFF;
   transition: 1s;
+  cursor: pointer;
 }
 
 .svg-arrow:hover {
@@ -368,7 +489,7 @@ ul, h1 {
 @media (max-width: 767px) {
   .promo-section {
     margin-top: 45px;
-    grid-template-columns: 1fr 0.6fr;
+    grid-template-columns: 1fr 1fr;
   }
 
   .promo-section__title {
@@ -380,7 +501,6 @@ ul, h1 {
     top: 10vh;
     right: 0;
     width: 49vw;
-    z-index: -1;
   }
 }
 @media (max-width: 576px) {
@@ -402,6 +522,10 @@ ul, h1 {
     width: 40px;
     height: 50px;
   }
+
+  .background-phone {
+    top: 113px;
+  }
 }
 @media (max-width: 435px) {
   .promo-section {
@@ -413,7 +537,7 @@ ul, h1 {
   }
 
   .background-phone {
-    top: 260px;
+    top: 240px;
   }
 }
 
