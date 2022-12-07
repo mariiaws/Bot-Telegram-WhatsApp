@@ -2,6 +2,8 @@
 @import "../settings";
 
 .info-container {
+  display: flex;
+  justify-content: center;
   margin-top: 10vw;
   background: url("../img/background-info.jpg") top/cover no-repeat;
   width: 100%;
