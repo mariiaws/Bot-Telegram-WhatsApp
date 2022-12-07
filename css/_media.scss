@@ -94,7 +94,6 @@
     padding: 6vw;
   }
 
-
   .svg-airplane {
     top: 314px;
     left: 0;
@@ -108,6 +107,20 @@
     right: 0;
     width: 120px;
     height: 65px;
+  }
+
+  .cost-section {
+    position: relative;
+  }
+  .cost {
+    grid-template-columns: 1fr;
+  }
+  .cost__img {
+    position: absolute;
+    width: 50%;
+    top: -18vw;
+    right: 0;
+
   }
 
 }
