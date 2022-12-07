@@ -1,0 +1,42 @@
+@import "../variables";
+@import "../settings";
+
+.cost-section {
+  display: flex;
+  justify-content: center;
+}
+
+.cost {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 5vw;
+
+}
+
+.cloud-img {
+  width: 100%;
+  height: 100%;
+}
+
+.cost-text__title {
+  font-size: $font-size-40;
+  line-height: calc(20px + 27 * (100vw / 1992));
+}
+
+.cost-text__list {
+  margin-top: 2vh;
+}
+
+.check-marks {
+  display: flex;
+  align-items: center;
+  gap: 1vw;
+  margin-bottom: 1vw;
+}
+
+.svg-check-mark {
+  width: 30px;
+  height: 25px;
+  flex-shrink: 0.1;
+}

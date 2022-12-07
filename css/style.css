@@ -465,6 +465,8 @@ a {
 }
 
 .info-container {
+  display: flex;
+  justify-content: center;
   margin-top: 10vw;
   background: url("../img/background-info.jpg") top/cover no-repeat;
   width: 100%;
@@ -528,6 +530,126 @@ a {
   height: 94px;
   top: 334px;
   right: 19vw;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+  background: #FFF;
+  color: #1C252B;
+}
+
+li {
+  list-style: none;
+}
+
+ul, h1 {
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.background-blotch {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 17vw;
+  height: 17vw;
+  z-index: -1;
+}
+
+.background-blotch-two {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 14vw;
+  height: 8vw;
+  z-index: -1;
+}
+
+.button {
+  width: 160px;
+  height: 40px;
+  border-radius: 6px;
+  border: none;
+  font-size: calc(14px + 4 * (100vw / 1992));
+  line-height: 150%;
+  color: #FFF;
+  cursor: pointer;
+}
+
+.svg-arrow {
+  width: 8px;
+  height: 8px;
+  background: #FFF;
+  transition: 1s;
+  cursor: pointer;
+}
+
+.svg-arrow:hover {
+  transition: 1s;
+  transform: translate3d(0, 2px, 0);
+}
+
+.use-arrow {
+  fill: #3A4D57;
+}
+
+.svg-cross {
+  width: 26px;
+  height: 22px;
+}
+
+.use-cross {
+  fill: #FBCFD8;
+}
+
+.cost-section {
+  display: flex;
+  justify-content: center;
+}
+
+.cost {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 5vw;
+}
+
+.cloud-img {
+  width: 100%;
+  height: 100%;
+}
+
+.cost-text__title {
+  font-size: calc(20px + 20 *(100vw / 1992));
+  line-height: calc(20px + 27 * (100vw / 1992));
+}
+
+.cost-text__list {
+  margin-top: 2vh;
+}
+
+.check-marks {
+  display: flex;
+  align-items: center;
+  gap: 1vw;
+  margin-bottom: 1vw;
+}
+
+.svg-check-mark {
+  width: 30px;
+  height: 25px;
+  flex-shrink: 0.1;
 }
 
 * {
@@ -715,6 +837,21 @@ a {
     right: 0;
     width: 120px;
     height: 65px;
+  }
+
+  .cost-section {
+    position: relative;
+  }
+
+  .cost {
+    grid-template-columns: 1fr;
+  }
+
+  .cost__img {
+    position: absolute;
+    width: 50%;
+    top: -18vw;
+    right: 0;
   }
 }
 @media (max-width: 435px) {
