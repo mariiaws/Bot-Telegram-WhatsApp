@@ -652,6 +652,10 @@ a {
   flex-shrink: 0.1;
 }
 
+.info-text {
+  font-size: calc(14px + 4 * (100vw / 1992));
+}
+
 * {
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
