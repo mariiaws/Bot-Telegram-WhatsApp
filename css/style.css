@@ -30,7 +30,6 @@ a {
   left: 0;
   width: 17vw;
   height: 17vw;
-  z-index: -1;
 }
 
 .background-blotch-two {
@@ -39,7 +38,6 @@ a {
   right: 0;
   width: 14vw;
   height: 8vw;
-  z-index: -1;
 }
 
 .button {
@@ -111,7 +109,6 @@ a {
   left: 0;
   width: 17vw;
   height: 17vw;
-  z-index: -1;
 }
 
 .background-blotch-two {
@@ -120,7 +117,6 @@ a {
   right: 0;
   width: 14vw;
   height: 8vw;
-  z-index: -1;
 }
 
 .button {
@@ -259,7 +255,6 @@ a {
   left: 0;
   width: 17vw;
   height: 17vw;
-  z-index: -1;
 }
 
 .background-blotch-two {
@@ -268,7 +263,6 @@ a {
   right: 0;
   width: 14vw;
   height: 8vw;
-  z-index: -1;
 }
 
 .button {
@@ -415,7 +409,6 @@ a {
   left: 0;
   width: 17vw;
   height: 17vw;
-  z-index: -1;
 }
 
 .background-blotch-two {
@@ -424,7 +417,6 @@ a {
   right: 0;
   width: 14vw;
   height: 8vw;
-  z-index: -1;
 }
 
 .button {
@@ -468,7 +460,7 @@ a {
   display: flex;
   justify-content: center;
   margin-top: 10vw;
-  background: url("../img/background-info.jpg") top/cover no-repeat;
+  background: url("../img/background-info.png") top/cover no-repeat;
   width: 100%;
   height: 890px;
 }
@@ -491,7 +483,7 @@ a {
 }
 
 .block-question {
-  top: 220px;
+  top: 180px;
   left: 40px;
 }
 
@@ -509,7 +501,7 @@ a {
 }
 
 .block-answer {
-  top: 485px;
+  top: 430px;
   right: 7vw;
 }
 
@@ -520,7 +512,7 @@ a {
 .svg-airplane {
   width: 270px;
   height: 140px;
-  top: 357px;
+  top: 310px;
   left: 18vw;
   transform: rotate(22deg);
 }
@@ -528,8 +520,8 @@ a {
 .svg-tags {
   width: 150px;
   height: 94px;
-  top: 334px;
-  right: 19vw;
+  top: 320px;
+  right: 17vw;
 }
 
 * {
@@ -564,7 +556,6 @@ a {
   left: 0;
   width: 17vw;
   height: 17vw;
-  z-index: -1;
 }
 
 .background-blotch-two {
@@ -573,7 +564,6 @@ a {
   right: 0;
   width: 14vw;
   height: 8vw;
-  z-index: -1;
 }
 
 .button {
@@ -688,7 +678,6 @@ a {
   left: 0;
   width: 17vw;
   height: 17vw;
-  z-index: -1;
 }
 
 .background-blotch-two {
@@ -697,7 +686,6 @@ a {
   right: 0;
   width: 14vw;
   height: 8vw;
-  z-index: -1;
 }
 
 .button {
@@ -773,7 +761,6 @@ a {
     top: 10vh;
     right: 0;
     width: 49vw;
-    z-index: -2;
   }
 }
 @media (max-width: 576px) {
@@ -829,11 +816,11 @@ a {
   }
 
   .svg-airplane {
-    top: 314px;
+    top: 295px;
     left: 0;
     width: 215px;
     height: 115px;
-    transform: rotate(0deg);
+    transform: rotate(11deg);
   }
 
   .svg-tags {
