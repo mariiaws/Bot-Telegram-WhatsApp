@@ -1,5 +1,25 @@
 @import "settings";
 
+@media (max-width: 1400px) {
+  .example-slider {
+    display: none;
+  }
+
+  .example-section__wrapper {
+    grid-template-columns: 1fr;
+  }
+
+  .voice-message__img {
+    display: flex;
+    justify-content: end;
+  }
+
+  .voice-message__img-wrapper {
+    width: 80%;
+    height: 90%;
+  }
+}
+
 @media (max-width: 992px) {
   .promo-container__wrapper {
     width: 90vw;
@@ -19,6 +39,11 @@
     top: 14vh;
     right: 5vw;
     width: 43vw;
+  }
+
+  .example-frame__img {
+    top: 10px;
+    right: -4vw;
   }
 
 }
@@ -77,13 +102,14 @@
     width: fit-content;
     height: fit-content;
     padding: 6vw;
+    left: 0;
   }
 
-  .svg-question, .svg-answer {
-    top: -9vw;
-    left: 0;
-    width: 13vw;
-    height: 17vw;
+  .question-mark, .answer-mark {
+    top: -0.5em;
+    width: 40px;
+    height: 40px;
+    left: -1vw;
   }
 
   .block-answer {
@@ -119,9 +145,13 @@
     width: 50%;
     top: -18vw;
     right: 0;
-
+    z-index: -1;
   }
 
+  .voice-message__img-wrapper {
+    width: 100%;
+    height: 100%;
+  }
 }
 
 @media (max-width: 435px) {
@@ -136,5 +166,4 @@
   .background-phone {
     top: 240px;
   }
-
 }

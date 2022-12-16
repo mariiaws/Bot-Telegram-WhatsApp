@@ -31,7 +31,7 @@
                             <use class="use-flag-russia" xlink:href="img/sprite.svg#russia"></use>
                         </svg>
                         <svg class="svg-arrow">
-                            <use class="use-arrow" xlink:href="img/sprite.svg#arrow-down"></use>
+                            <use class="use-arrow" xlink:href="img/sprite.svg#arrow"></use>
                         </svg>
                         <ul class="drop-down-content" style="display: none">
                             <li class="language-russia">Русский</li>
@@ -74,21 +74,17 @@
 
 <div class="promo-container">
 
-    <div class="info-container">
+    <div class="info-container-img">
         <div class="promo-container__wrapper">
 
             <section class="info-section">
                 <div class="block-question">
-                    <svg class="svg-question">
-                        <use class="use-question" xlink:href="img/sprite.svg#question"></use>
-                    </svg>
+                    <div class="question-mark">?</div>
                     <span class="block-question__text">Вы часто пишите посты для публикации в различных блогах,
                 группах, каналах и это занимает много времени?</span>
                 </div>
                 <div class="block-answer">
-                    <svg class="svg-answer">
-                        <use class="use-answer" xlink:href="img/sprite.svg#answer"></use>
-                    </svg>
+                    <div class="answer-mark">!</div>
                     <span class="block-answer__text">Есть простое решение - надиктуйте ваши мысли в
                 аудиосообщение а мы подготовим и оформим отличный пост для публикации.</span>
                 </div>
@@ -143,62 +139,72 @@
 </div>
 
 <div class="promo-container">
-    <div class="promo-container__wrapper">
-
-        <section class="example-section">
-            <div class="example-section__background"></div>
-            <h1 class="example-section__title">Пример создания заметки</h1>
-            <div class="example-section__wrapper">
-                <div class="example-notes">
-                    <div class="example-notes__item">
-                        <span class="item-number"></span>
-                        <span class="item-text"></span>
+    <div class="example-section-background">
+        <div class="promo-container__wrapper">
+            <section class="example-section">
+                <h1 class="example-section__title">Пример создания заметки</h1>
+                <div class="example-section__wrapper">
+                    <div class="example-notes">
+                        <div class="example-notes__item">
+                            <span class="item-number">1</span>
+                            <span class="item-text">Надиктовать 3-минутную голосовую заметку — 10 минут.
+                            Из них примерно 7 минут я накидываю структуру заметки, делаю пару
+                            тестовых записей и третью боевую запись для отправки.</span>
+                        </div>
+                        <div class="example-notes__item">
+                            <span class="item-number">2</span>
+                            <span class="item-text">Расшифровать голосовое сообщение — 1 минут</span>
+                        </div>
+                        <div class="example-notes__item">
+                            <span class="item-number">3</span>
+                            <span class="item-text">Отредактировать — 30 минут.</span></div>
+                        <div class="example-notes__item">
+                            <span class="item-number">4</span>
+                            <span class="item-text">В результате эксперимента 3 минуты
+                            голосовой записи превратились в красивый, логичный пост.</span>
+                        </div>
+                        <div class="example-notes__item item-best">
+                        <span class="item-best__text">Сервис справляется с задачей написания постов
+                            лучше и <span class="item-best__text-fast">в 18 раз быстрее</span>, чем если бы вы делали это сами.</span>
+                        </div>
+                        <div class="voice-message">
+                            <span class="voice-message__title">Слушать пример заметки</span>
+                            <div class="voice-message__img">
+                                <img src="img/voice-message.png" class="voice-message__img-wrapper"
+                                     alt="Пример голосового сообщения"/>
+                            </div>
+                        </div>
                     </div>
 
-                    <div class="example-notes__item">
-                        <span class="item-number"></span>
-                        <span class="item-text"></span>
-                    </div>
-                    <div class="example-notes__item">
-                        <span class="item-number"></span>
-                        <span class="item-text"></span></div>
+                    <div class="example-slider">
+                        <div class="slider">
+                            <div class="slider-wrapper">
+                                <button class="example-slider__button btn-previous">
+                                    <svg class="svg-arrow-previous">
+                                        <use class="use-previous" xlink:href="img/sprite.svg#arrow"></use>
+                                    </svg>
+                                </button>
 
-                    <div class="example-notes__item">
-                        <span class="item-number"></span>
-                        <span class="item-text"></span>
-                    </div>
+                                <div class="example-section__wrapper-frame"></div>
+                                <div class="slider-wrapper__img">
+                                    <img src="img/example-chat.png" class="example-chat-img" alt="Пример из чата"/>
+                                    <img src="img/example-chat-2.jpg" class="example-chat-img-two" alt="Пример из чата номер два"/>
+                                </div>
 
-                    <div class="example-notes__item">
-                        <span class="item-number"></span>
-                        <span class="item-text"></span></div>
+                                <button class="example-slider__button btn-next">
+                                    <svg class="svg-arrow-next">
+                                        <use class="use-next" xlink:href="img/sprite.svg#arrow"></use>
+                                    </svg>
+                                </button>
+                            </div>
 
-                    <div class="example-notes__item item-best">
-                        <span class="item-number"></span>
-                        <span class="item-best__text"></span></div>
-
-                    <div class="voice-message">
-                        <span class="voice-message__title">Слушать пример заметки</span>
-                        <div class="voice-message__img">
-                            <img src="img/voice-message.png" alt="Пример голосового сообщения"/>
                         </div>
                     </div>
                 </div>
-
-                <div class="example-slider">
-                    <div class="slider"></div>
-                    <button class="btn-next"> <svg class="svg-arrow-next">
-                        <use class="use-next" xlink:href="img/sprite.svg#arrow"></use>
-                    </svg></button>
-                    <button class="btn-previous">
-                        <svg class="svg-arrow-previous">
-                        <use class="use-previous" xlink:href="img/sprite.svg#arrow"></use>
-                    </svg></button>
-                </div>
-
-            </div>
-        </section>
+            </section>
 
 
+        </div>
     </div>
 </div>
 
