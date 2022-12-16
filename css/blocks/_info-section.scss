@@ -1,7 +1,7 @@
 @import "../variables";
 @import "../settings";
 
-.info-container {
+.info-container-img {
   display: flex;
   justify-content: center;
   margin-top: 10vw;
@@ -32,12 +32,27 @@
   left: 40px;
 }
 
-.svg-question, .svg-answer {
+.question-mark, .answer-mark {
   position: absolute;
-  top: -30px;
-  left: -30px;
-  width: 65px;
-  height: 90px;
+  top: -20px;
+  left: -25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 15%;
+  height: 40%;
+  border-radius: 50%;
+  font-size: calc(32px + 28 * (100vw / 1992));
+  font-weight: 900;
+  color: $white;
+}
+
+.question-mark {
+  background: $blue;
+}
+
+.answer-mark {
+  background: $background-whatsapp;
 }
 
 .block-question__text, .block-answer__text {

@@ -1,6 +1,22 @@
 @import "../settings";
 @import "../variables";
 
+.background-blotch {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 17vw;
+  height: 17vw;
+}
+
+.background-blotch-two {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 14vw;
+  height: 8vw;
+}
+
 .promo-container {
   display: flex;
   justify-content: center;
@@ -37,6 +53,23 @@
   box-shadow: 0 0 7px rgba(8, 76, 148, 0.28);
   cursor: pointer;
 
+}
+
+.svg-arrow {
+  width: 8px;
+  height: 8px;
+  background: $white;
+  transition: 1s;
+  cursor: pointer;
+}
+
+.svg-arrow:hover {
+  transition: 1s;
+  transform: translate3d(0, 2px, 0);
+}
+
+.use-arrow {
+  fill: #3A4D57;
 }
 
 .svg-flag-uk {
