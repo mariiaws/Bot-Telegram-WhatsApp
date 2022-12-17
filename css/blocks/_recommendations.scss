@@ -1,0 +1,41 @@
+@import "../settings";
+@import "../variables";
+
+.recommendations {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 5vw;
+  margin-top: 5vw;
+}
+
+.recommendations-img {
+  position: relative;
+  width: 100%;
+  height: 13vw;
+}
+
+.img-gears, .img-pencil {
+  position: absolute;
+}
+
+.img-pencil {
+  width: 100%;
+}
+
+.img-gears {
+  top: 0;
+  right: 0;
+  width: 30%;
+}
+
+.recommendations-text__title {
+  font-size: calc(20px + 20 * (100vw / 1992));
+  line-height: $line-height-47;
+}
+
+.recommendations-text__subtitle {
+  margin-top: 2vw;
+  font-size: $font-size-18;
+  line-height: 21px;
+}

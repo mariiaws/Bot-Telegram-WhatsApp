@@ -630,7 +630,7 @@ a {
   margin-top: 10vw;
   background: url("../img/background-example-of-notes.png") top/cover no-repeat;
   width: 100%;
-  height: 1250px;
+  height: 1300px;
 }
 
 .example-section__title {
@@ -852,6 +852,100 @@ a {
   fill: #FBCFD8;
 }
 
+.recommendations {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 5vw;
+  margin-top: 5vw;
+}
+
+.recommendations-img {
+  position: relative;
+  width: 100%;
+  height: 13vw;
+}
+
+.img-gears, .img-pencil {
+  position: absolute;
+}
+
+.img-pencil {
+  width: 100%;
+}
+
+.img-gears {
+  top: 0;
+  right: 0;
+  width: 30%;
+}
+
+.recommendations-text__title {
+  font-size: calc(20px + 20 * (100vw / 1992));
+  line-height: calc(20px + 27 * (100vw / 1992));
+}
+
+.recommendations-text__subtitle {
+  margin-top: 2vw;
+  font-size: calc(14px + 4 * (100vw / 1992));
+  line-height: 21px;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+  background: #FFF;
+  color: #1C252B;
+}
+
+.promo-container {
+  display: flex;
+  justify-content: center;
+}
+
+.promo-container__wrapper {
+  width: 60%;
+}
+
+li {
+  list-style: none;
+}
+
+ul, h1 {
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.button {
+  width: 160px;
+  height: 40px;
+  border-radius: 6px;
+  border: none;
+  font-size: calc(14px + 4 * (100vw / 1992));
+  line-height: 150%;
+  color: #FFF;
+  cursor: pointer;
+}
+
+.svg-cross {
+  width: 26px;
+  height: 22px;
+}
+
+.use-cross {
+  fill: #FBCFD8;
+}
+
 @media (max-width: 1400px) {
   .example-slider {
     display: none;
@@ -912,6 +1006,20 @@ a {
     top: 10vh;
     right: 0;
     width: 49vw;
+  }
+
+  .recommendations {
+    grid-template-columns: 1fr;
+    justify-items: end;
+  }
+
+  .recommendations-img {
+    width: 50%;
+    z-index: -1;
+  }
+
+  .recommendations-text__title {
+    width: 70%;
   }
 }
 @media (max-width: 576px) {
@@ -1014,6 +1122,10 @@ a {
 
   .background-phone {
     top: 240px;
+  }
+
+  .recommendations-img {
+    top: 15vw;
   }
 }
 
