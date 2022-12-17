@@ -682,12 +682,13 @@ a {
 
 .slider-wrapper__img {
   position: absolute;
-  top: 3vw;
+  top: 3.5vw;
   right: 2vw;
   bottom: 0;
   display: flex;
   width: 60%;
-  height: 90%;
+  height: 85%;
+  border-radius: 20px;
   overflow: hidden;
   z-index: 10;
 }
@@ -699,11 +700,6 @@ a {
 }
 
 .example-chat-img {
-  width: 100%;
-  height: 100%;
-}
-
-.example-chat-img-two {
   width: 100%;
   height: 100%;
 }

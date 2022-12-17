@@ -31,38 +31,48 @@ languageRussia.onclick = function () {
 }
 
 //SLIDER
-const slider = document.querySelector('.slider-wrapper__img .slider-wrapper__img-flip');
-const exampleImages = document.querySelectorAll('.slider-wrapper__img-flip img');
-let buttonPrevious = document.querySelector('.btn-previous');
-let buttonNext = document.querySelector('.btn-next');
+window.onload = () => {
 
-let count = 0;
-let widthSlider;
+    function slider() {
+        const slider = document.querySelector('.slider-wrapper__img .slider-wrapper__img-flip');
+        const exampleImages = document.querySelectorAll('.slider-wrapper__img-flip img');
+        let buttonPrevious = document.querySelector('.btn-previous');
+        let buttonNext = document.querySelector('.btn-next');
 
-widthSlider = slider.offsetWidth;
+        let count = 0;
+        let widthSlider;
 
-console.log(widthSlider)
+        widthSlider = slider.offsetWidth;
 
-buttonNext.addEventListener('click', () => {
-    count++;
-    if (count >= exampleImages.length) {
-        count = 0;
+        console.log(widthSlider)
+
+        buttonNext.addEventListener('click', () => {
+            count++;
+            if (count >= exampleImages.length) {
+                count = 0;
+            }
+
+            flipThrough();
+        })
+
+        buttonPrevious.addEventListener('click', () => {
+            count--
+            if (count < 0) {
+                count = exampleImages.length - 1;
+            }
+            flipThrough()
+        })
+
+        console.log(exampleImages.length);
+
+        function flipThrough() {
+            slider.style.transform = 'translate(-' + count * widthSlider + 'px)';
+        }
+
     }
 
-    flipThrough();
-})
-
-buttonPrevious.addEventListener('click', () => {
-    count--
-    if (count < 0) {
-        count = exampleImages.length - 1;
-    }
-    flipThrough()
-})
-
-console.log(exampleImages.length);
-
-function flipThrough() {
-    slider.style.transform = 'translate(-' + count * widthSlider + 'px)';
+    slider()
 }
+
+
 
