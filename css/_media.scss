@@ -64,6 +64,20 @@
     width: 49vw;
   }
 
+  .recommendations {
+    grid-template-columns: 1fr;
+    justify-items: end;
+
+  }
+
+  .recommendations-img {
+    width: 50%;
+    z-index: -1;
+  }
+
+  .recommendations-text__title {
+    width: 70%;
+  }
 }
 
 @media (max-width: 576px) {
@@ -165,5 +179,9 @@
 
   .background-phone {
     top: 240px;
+  }
+
+  .recommendations-img {
+    top: 15vw;
   }
 }
