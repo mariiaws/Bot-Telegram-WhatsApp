@@ -1,0 +1,72 @@
+@import "../variables";
+@import "../settings";
+
+.q-a-background {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10vw;
+  width: 100%;
+  height: 1100px;
+  background: url("../img/background-q-a.png") top/cover no-repeat;
+}
+
+.q-a__title {
+  font-size: $font-size-40;
+  line-height: $line-height-47;
+}
+
+.q-a__accordion {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 3vw;
+  gap: 2vw;
+}
+
+.accordion {
+  display: flex;
+  flex-direction: column;
+  gap: 2vw;
+}
+
+.accordion-button {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5vw;
+  width: 100%;
+  background: #FFFFFF;
+  border: 1px solid #BDD6E4;
+  border-radius: 4px;
+  font-size: calc(16px + 6 * (100vw / 1992));
+  line-height: calc(19px + 7 * (100vw / 1992));
+}
+
+.svg-accordion-arrow {
+  width: 17px;
+  height: 8px;
+}
+
+.use-accordion-arrow {
+  fill: $dark-black;
+}
+
+.panel {
+  display: grid;
+  background: rgba(255, 255, 255, 0.6);
+}
+
+.panel-active {
+  display: none;
+}
+
+.button-active {
+  transform: rotate(180deg);
+}
+
+.accordion-text {
+  padding: 0.8vw;
+  font-size: $font-size-18;
+  line-height: 140%;
+  color: $dark-blue;
+}
