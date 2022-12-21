@@ -44,8 +44,6 @@ window.onload = () => {
 
         widthSlider = slider.offsetWidth;
 
-        console.log(widthSlider)
-
         buttonNext.addEventListener('click', () => {
             count++;
             if (count >= exampleImages.length) {
@@ -63,8 +61,6 @@ window.onload = () => {
             flipThrough()
         })
 
-        console.log(exampleImages.length);
-
         function flipThrough() {
             slider.style.transform = 'translate(-' + count * widthSlider + 'px)';
         }
@@ -74,5 +70,27 @@ window.onload = () => {
     slider()
 }
 
+//Accordion
+
+let accordionButton = document.querySelectorAll('.accordion-button');
+
+let i;
+
+for (i = 0; i < accordionButton.length; i++) {
+    accordionButton[i].addEventListener("click", function() {
+        console.log('click');
+        let panel = this.nextElementSibling;
+        if (panel) {
+            panel.classList.toggle('panel-active');
+        }
+
+        let arrow = this.lastElementChild;
+        if (arrow) {
+            arrow.classList.toggle("button-active");
+
+        }
+
+    });
+}
 
 
