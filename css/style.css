@@ -1107,6 +1107,143 @@ p {
   fill: #FBCFD8;
 }
 
+.footer {
+  display: flex;
+  justify-content: space-between;
+  gap: 2vw;
+  margin: 2vw 0 2vw 0;
+}
+
+.footer-try__title {
+  font-size: calc(20px + 20 * (100vw / 1992));
+  line-height: calc(20px + 27 * (100vw / 1992));
+}
+
+.footer-contacts {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.footer-contacts__text {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5vw;
+}
+
+.footer-contacts__title {
+  font-weight: 500;
+  font-size: calc(14px + 4 * (100vw / 1992));
+  line-height: calc(13px + 18 * (100vw / 1992));
+  text-transform: uppercase;
+  color: #3A4D57;
+}
+
+.footer-contacts__email, .footer-contacts__call {
+  display: flex;
+  align-items: center;
+  gap: 0.5vw;
+  font-size: calc(14px + 4 * (100vw / 1992));
+  line-height: calc(13px + 18 * (100vw / 1992));
+  color: #3A4D57;
+}
+
+.footer-contacts__email:hover {
+  text-decoration: underline;
+}
+
+.footer-contacts__call:hover {
+  text-decoration: underline;
+}
+
+.svg-email {
+  width: 16px;
+  height: 12px;
+}
+
+.use-email, .use-call {
+  fill: #3F92D1;
+}
+
+.svg-call {
+  width: 16px;
+  height: 16px;
+}
+
+.privacy-policy {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1vw;
+}
+
+.privacy-policy__link {
+  color: #3A4D57;
+}
+
+.privacy-policy__link:hover {
+  text-decoration: underline;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+  background: #FFF;
+  color: #1C252B;
+}
+
+.promo-container {
+  display: flex;
+  justify-content: center;
+}
+
+.promo-container__wrapper {
+  width: 60%;
+}
+
+li {
+  list-style: none;
+}
+
+ul, h1 {
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+p {
+  margin: 0;
+}
+
+.button {
+  width: 160px;
+  height: 40px;
+  border-radius: 6px;
+  border: none;
+  font-size: calc(14px + 4 * (100vw / 1992));
+  line-height: 150%;
+  color: #FFF;
+  cursor: pointer;
+}
+
+.svg-cross {
+  width: 26px;
+  height: 22px;
+}
+
+.use-cross {
+  fill: #FBCFD8;
+}
+
 @media (max-width: 1400px) {
   .example-slider {
     display: none;
