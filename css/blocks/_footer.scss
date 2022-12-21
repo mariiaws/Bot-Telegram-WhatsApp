@@ -10,7 +10,7 @@
 }
 
 .footer-try__title {
-  font-size: $font-size-40;
+  font-size: calc(20px + 9 * (100vw / 1992));
   line-height: $line-height-47;
 }
 

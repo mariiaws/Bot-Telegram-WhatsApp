@@ -1115,7 +1115,7 @@ p {
 }
 
 .footer-try__title {
-  font-size: calc(20px + 20 * (100vw / 1992));
+  font-size: calc(20px + 9 * (100vw / 1992));
   line-height: calc(20px + 27 * (100vw / 1992));
 }
 
@@ -1434,6 +1434,26 @@ p {
     align-items: start;
     padding-top: 5vw;
     height: 1200px;
+  }
+
+  .footer {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10vw;
+  }
+
+  .footer-contacts {
+    order: 2;
+    gap: 4vw;
+  }
+
+  .footer-contacts__text {
+    justify-content: center;
+    gap: 5vw;
+  }
+
+  .privacy-policy {
+    justify-content: center;
   }
 }
 
