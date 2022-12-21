@@ -78,6 +78,10 @@
   .recommendations-text__title {
     width: 70%;
   }
+
+  .q-a__accordion {
+    grid-template-columns: 1fr;
+  }
 }
 
 @media (max-width: 576px) {
@@ -183,5 +187,11 @@
 
   .recommendations-img {
     top: 15vw;
+  }
+
+  .q-a-background {
+    align-items: start;
+    padding-top: 5vw;
+    height: 1200px;
   }
 }
