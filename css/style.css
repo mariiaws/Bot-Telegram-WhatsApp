@@ -1425,12 +1425,25 @@ p {
     top: 240px;
   }
 
+  .info-container-img {
+    margin-top: 0;
+  }
+
+  .cost-section {
+    margin-top: -30vw;
+  }
+
+  .example-section-background {
+    height: 1050px;
+  }
+
   .recommendations-img {
     top: 15vw;
   }
 
   .q-a-background {
     align-items: start;
+    margin-top: 25vw;
     padding-top: 5vw;
     height: 1200px;
   }
