@@ -4,6 +4,8 @@ let dropDown = document.querySelector('.nav__language');
 let dropDownContent = document.querySelector('.drop-down-content');
 
 let languageRussia = document.querySelector('.language-russia');
+let languageUk = document.querySelector('.language-uk');
+
 let flagRussia = document.querySelector('.svg-flag-russia');
 let flagUk = document.querySelector('.svg-flag-uk');
 
@@ -18,17 +20,26 @@ dropDown.addEventListener('click', function () {
 
 })
 
-languageRussia.onclick = function () {
-    if (flagRussia.style.cssText === 'display: none;') {
-        flagRussia.style.cssText = 'display: flex;';
+languageUk.onclick = function () {
+    if (languageUk.style.cssText === 'display: flex;') {
+        languageUk.style.cssText = 'display: none;'
         flagUk.style.cssText = 'display: none;';
 
-    } else {
+        languageRussia.style.cssText = 'display: flex;';
+        flagRussia.style.cssText = 'display: flex;';
+    }
+}
+
+languageRussia.onclick = function () {
+    if (languageRussia.style.cssText === 'display: flex;'){
+        languageRussia.style.cssText = 'display: none;';
         flagRussia.style.cssText = 'display: none;';
+
+        languageUk.style.cssText = 'display: flex;'
         flagUk.style.cssText = 'display: flex;';
     }
-
 }
+
 
 //SLIDER
 window.onload = () => {

@@ -84,14 +84,14 @@
   display: none;
   position: absolute;
   top: 42px;
-  left: -13px;
+  left: -4px;
   padding: 6px;
   border-radius: 6px;
   background: #FFF;
   box-shadow: 0 0 7px rgb(8 76 148 / 28%);
 }
 
-.language-russia:hover {
+.language-russia:hover, .language-uk:hover {
   text-decoration: underline;
   cursor: pointer;
 }
