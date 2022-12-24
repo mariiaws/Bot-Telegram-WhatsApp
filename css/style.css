@@ -163,6 +163,10 @@ p {
   cursor: pointer;
 }
 
+.nav__language:hover .drop-down-content {
+  display: flex;
+}
+
 .svg-arrow {
   width: 8px;
   height: 8px;
@@ -188,6 +192,7 @@ p {
 }
 
 .svg-flag-russia {
+  position: absolute;
   width: 21px;
   height: 21px;
   box-shadow: 0 0 7px rgba(8, 76, 148, 0.28);
@@ -195,19 +200,33 @@ p {
 }
 
 .drop-down-content {
-  display: none;
   position: absolute;
-  top: 42px;
-  left: -13px;
-  padding: 6px;
-  border-radius: 6px;
+  display: none;
+  justify-content: center;
+  top: 33px;
+  left: -5px;
+  padding: 5px 10px;
+  border-radius: 5px;
   background: #FFF;
-  box-shadow: 0 0 7px rgba(8, 76, 148, 0.28);
+  box-shadow: -1px 3px 7px rgba(8, 76, 148, 0.28);
 }
 
-.language-russia:hover {
+.language-russia {
+  position: absolute;
+  background: white;
+}
+
+.language-russia, .svg-flag-russia {
+  z-index: -1;
+}
+
+.language-russia:hover, .language-uk:hover {
   text-decoration: underline;
   cursor: pointer;
+}
+
+.language--active {
+  z-index: 10;
 }
 
 * {

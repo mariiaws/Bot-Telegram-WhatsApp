@@ -1,42 +1,17 @@
 'use strict'
 
-let dropDown = document.querySelector('.nav__language');
-let dropDownContent = document.querySelector('.drop-down-content');
-
 let languageRussia = document.querySelector('.language-russia');
-let languageUk = document.querySelector('.language-uk');
-
 let flagRussia = document.querySelector('.svg-flag-russia');
-let flagUk = document.querySelector('.svg-flag-uk');
+let navLng = document.querySelector('.nav__language');
 
+navLng.addEventListener('click', showHide);
 
-dropDown.addEventListener('click', function () {
-    console.log('click');
+function showHide(event) {
+    let target = event.target;
 
-    if (dropDownContent.style.cssText === 'display: none;') {
-        dropDownContent.style.cssText = 'display: flex;';
-
-    } else dropDownContent.style.cssText = 'display: none;';
-
-})
-
-languageUk.onclick = function () {
-    if (languageUk.style.cssText === 'display: flex;') {
-        languageUk.style.cssText = 'display: none;'
-        flagUk.style.cssText = 'display: none;';
-
-        languageRussia.style.cssText = 'display: flex;';
-        flagRussia.style.cssText = 'display: flex;';
-    }
-}
-
-languageRussia.onclick = function () {
-    if (languageRussia.style.cssText === 'display: flex;'){
-        languageRussia.style.cssText = 'display: none;';
-        flagRussia.style.cssText = 'display: none;';
-
-        languageUk.style.cssText = 'display: flex;'
-        flagUk.style.cssText = 'display: flex;';
+    if (target.closest('.language-uk') || target.closest('.language-russia')) {
+        languageRussia.classList.toggle('language--active');
+        flagRussia.classList.toggle('language--active');
     }
 }
 
@@ -88,7 +63,7 @@ let accordionButton = document.querySelectorAll('.accordion-button');
 let i;
 
 for (i = 0; i < accordionButton.length; i++) {
-    accordionButton[i].addEventListener("click", function() {
+    accordionButton[i].addEventListener("click", function () {
         console.log('click');
         let panel = this.nextElementSibling;
         if (panel) {
