@@ -38,8 +38,15 @@
   background: #FFFFFF;
   border: 1px solid #BDD6E4;
   border-radius: 4px;
+  cursor: pointer;
+  transition: 1s;
   font-size: calc(16px + 6 * (100vw / 1992));
   line-height: calc(19px + 7 * (100vw / 1992));
+}
+
+.accordion-button:hover {
+  transition: 1s;
+  background: rgba(215, 215, 217, 0.8);
 }
 
 .svg-accordion-arrow {
