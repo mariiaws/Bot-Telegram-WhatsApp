@@ -32,6 +32,15 @@ function showHide(event) {
     changeURLLanguage()
 }
 
+function scrolling() {
+    const el = document.querySelector('.link-q-a');
+    el.onclick = () => {
+        let count = document.querySelector('.q-a__title').getBoundingClientRect().top;
+        window.scroll({top: count, behavior: "smooth"})
+    }
+}
+
+scrolling()
 
 //SLIDER
 window.onload = () => {
