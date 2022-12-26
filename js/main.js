@@ -13,6 +13,23 @@ function showHide(event) {
         languageRussia.classList.toggle('language--active');
         flagRussia.classList.toggle('language--active');
     }
+
+    function changeURLLanguage() {
+
+        if (target.closest('.language-uk')) {
+            for (let key in objLang) {
+                document.querySelector('.' + key).innerHTML = objLang[key].en;
+            }
+        }
+
+        if (target.closest('.language-russia')) {
+            for (let key in objLang) {
+                document.querySelector('.' + key).innerHTML = objLang[key].ru;
+            }
+        }
+    }
+
+    changeURLLanguage()
 }
 
 
