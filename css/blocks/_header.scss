@@ -32,6 +32,10 @@
   color: $black;
 }
 
+.link-q-a {
+  cursor: pointer;
+}
+
 .link-about:hover, .link-q-a:hover {
   text-decoration: underline;
 }
@@ -107,6 +111,7 @@
 .language-russia, .svg-flag-russia {
   z-index: -1;
 }
+
 .language-russia:hover, .language-uk:hover {
   text-decoration: underline;
   cursor: pointer;

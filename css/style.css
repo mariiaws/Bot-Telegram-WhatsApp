@@ -147,6 +147,10 @@ p {
   color: #1C252B;
 }
 
+.link-q-a {
+  cursor: pointer;
+}
+
 .link-about:hover, .link-q-a:hover {
   text-decoration: underline;
 }
